@@ -1,0 +1,372 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("Fonts/Gilroy-FREE/Gilroy-Light.otf");
+}
+@font-face {
+  font-family: "GilroyEB";
+  src: url("Fonts/Gilroy-FREE/Gilroy-ExtraBold.otf");
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("Fonts/avenir_ff/AvenirLTStd-Roman.otf");
+}
+
+.col-xl-4{
+    text-align: center;
+    margin: 4vh 0 1vh 0;
+}
+.contacto h4{
+    font-size: 15px;
+    font-family: "Avenir";
+}
+.contacto p{
+    font-size: 12px;
+    font-family: "Gilroy";
+}
+.contacto a{
+  text-decoration: none;
+  color: black;
+}
+.copyright{
+    background-color: black;
+    height:15vh;
+    display: flex;
+    align-items: center;
+}
+.copyright p{
+    color: white;
+    margin: 0 auto;
+    font-size: 10px;
+}
+.asesores{
+    height:200px;
+    background-image:url('img/asesores.jpeg');
+    background-size: 110%;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.asesores h3, .asesores p, .asesores button{
+    margin: 1vh auto;
+    text-align: center;
+    color: white;
+}
+.asesores button{
+    background-color: green;
+    border: 1px solid green;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+.asesores button a{
+    text-decoration: none;
+    color: white;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+.encabezado{
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("img/2.jpeg");
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 10s infinite;
+    z-index: -200000;
+}
+@keyframes slide {
+    0%{
+      background-position-y: center;
+      background-position-x: center;
+      background-image: url("img/2.jpeg");
+    }
+    33%{
+      background-position-y: center;
+      background-position-x: center;
+      background-image: url("img/3.jpeg");
+    }
+    67%{
+      background-position-y: center;
+      background-position-x: center;
+      background-image: url("img/4.jpeg");
+    }
+  }
+.content2{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 90%;
+}
+.content2 h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-shadow: 0.2em 0.2em 0.4em black;
+    font-family: "Avenir";
+}
+  .content2 p{
+    margin-top: 3vh;
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vh;
+    border-radius: 20px;
+    text-shadow: 0.2em 0.2em 0.4em black;
+    font-family: "Avenir";
+}
+
+.pagos{
+  background-color: white;
+    padding: 7vh 0 7vh 0;
+}
+.pagos p{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: "Avenir";
+}
+.pagos hr{
+  color: black;
+    width: 50px;
+    margin: 20px auto;
+}
+.lotes{
+    margin: 5vh 0;
+}
+.lotes h2, .servicios h2, .deportes h3, .contacto h2{
+  font-size: 24px;
+  margin: 6vh 0;
+  font-family: "GilroyEB";
+}
+.lotes h3{
+    font-size: 18px;
+    font-family: "Avenir";
+}
+.lotes p{
+    font-size: 12px;
+    padding: 0 15%;
+    font-family: "Gilroy";
+}
+.lotes img{
+    width: 330px;
+    height: 33vh;
+    margin-bottom: 3vh;
+}
+.lotes .col-xl-6 {
+    text-align: center;
+}
+.lotes button{
+    margin-bottom: 4vh;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+.servicios{
+    margin: 5vh 0 7vh 0;
+}
+.servicios img{
+    width: 40px;
+    height: 40px;
+}
+.servicios .col-xl-4{
+  padding: 0 5vh 0 5vh;
+}
+.servicios p{
+  font-size: 15px;
+  font-family: "Avenir";
+}
+.servicios small{
+  font-size: 12px;
+  font-family: "Gilroy";
+}
+.header{
+    height: 0px;
+    background: white;
+    padding: 0 20px;
+    color: black;
+  }
+  .logo{
+    margin-left: 100px;
+    font-size: 15px;
+    float: left;
+    font-family: "Avenir";
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  ul{
+    height: 80px;
+  }
+  .menu{
+    float: right;
+    line-height: 100px;
+    margin-right: 150px;
+  }
+  .menu a{
+    color: black;
+    text-decoration: none;
+    font-family: "Gilroy";
+    padding: 0 10px;
+    transition: 0.4s;
+    font-size: 12px;
+  }
+  .show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .show-menu-btn{
+    float: right;
+  }
+  .show-menu-btn i{
+    line-height: 100px;
+  }
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: #3498db;
+  }
+  
+  #chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
+  
+  .content{
+    padding: 0 20px;
+  }
+  .content img{
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 0;
+  }
+  .content p{
+    text-align: justify;
+  }
+  
+  @media screen and (max-width:800px) {
+    .show-menu-btn,.hide-menu-btn{
+      display: block;
+    }
+    .menu{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      right: -100%;
+      top: 0;
+      text-align: center;
+      padding: 80px 0;
+      line-height: normal;
+      transition: 0.7s;
+      margin-right: 0px;
+    }
+    .menu a{
+      display: block;
+      padding: 20px;
+      font-size: 20px;
+    }
+    .hide-menu-btn{
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+    #chk:checked ~ .menu{
+      right: 0;
+    }
+    .logo{
+        margin-left: 0;
+    }
+  }
+  .complemento{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-family: "Avenir";
+    justify-content: center;
+  }
+  .complemento p{
+    color: white;
+  }
+  .contenidoQS{
+    margin: 6vh 0;
+  }
+  .contenidoQS .container{
+  
+  }
+  .contenidoQS img, .contenidoLV img{
+    width: 80%;
+    padding: 0 auto;
+  }
+  .contenidoQS .col-xl-5, .contenidoLV .col-xl-5{
+    text-align: left;
+    margin-top: 0vh;
+    padding-left: 30px;
+    padding-right: 10%;
+  }
+  .contenidoQS h2 .contenidoLV h2{
+    font-family: "GilroyEB";
+    font-size: 20px;
+  }
+  .contenidoQS .subtitulo, .contenidoLV .subtitulo {
+    font-family: "Avenir";
+    font-size: 17px;
+  }
+  .contenidoQS p{
+    margin-top: 2vh;
+    font-family: "Gilroy";
+    font-size: 13px;
+    padding: 0 10%;
+  }
+  .contenidoLV p{
+    margin-top: 5vh;
+    font-family: "Gilroy";
+    font-size: 13px;
+  }
+  .contenidoQS img{
+    margin-bottom: 3vh;
+  }
+  .contenidoLV .subtitulo{
+    padding: 0 10%;
+    text-align: center;
+  }
+  .contenidoLV{
+    margin: 6vh 0;
+  }
+  .deportes{
+    margin: 6vh;
+  }
+  .deportes .card{
+    margin: 2vh 0 2vh 0;
+  }
+
+  .card img{
+    height: 25vh;
+    width: 100%;
+  }
+  .tituloTarjeta{
+    font-size: 18px;
+    font-family: "Avenir";
+  }
+  .card p{
+    font-size: 12px;
+    font-family: "Gilroy";
+  }
+  .lotes a{
+    text-decoration: none;
+    color: white;
+  }

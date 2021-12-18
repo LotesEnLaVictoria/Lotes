@@ -9,8 +9,46 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
+    <style>
+.encabezado{
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("img/reserva/1.jpeg");
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 10s infinite;
+    z-index: -200000;
+}
+@keyframes slide {
+    0%{
+      background-position-y: center;
+      background-position-x: center;
+      background-image: url("img/reserva/1.jpeg");
+    }
+    33%{
+      background-position-y: center;
+      background-position-x: center;
+      background-image: url("img/reserva/2.jpeg");
+    }
+    67%{
+      background-position-y: center;
+      background-position-x: center;
+      background-image: url("img/reserva/3.jpeg");
+    }
+  }
+    </style>
+    
 </head>
 <body>
+
+    <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=+5491149929002&text=%C2%A1Hola%20Me%20gustaria%20hacerte%20una%20consulta" target="_blank">
+        <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+        </a>
+      </div>
 
     <section class="header">
             <h2 class="logo">Lotes en La Victoria <br> y La Reserva Escondida</h2>
@@ -139,6 +177,15 @@
                         <div class="card-body">
                           <h4 class="tituloTarjeta">Club House de Golf</h4>
                           <p class="card-text">Emplazado estratégicamente para tener una visual sin interrupciones de la cancha de golf, el Club House de Golf es un espacio que claramente merece ser disfrutado.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/deporte/piscina.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="tituloTarjeta">Piscina</h4>
+                          <p class="card-text">Una piscina semi olímpica donde grandes y chicos disfrutan, junto a familiares y amigos. A pocos metros del Spa y el gimnasio</p>
                         </div>
                       </div>
                 </div>
